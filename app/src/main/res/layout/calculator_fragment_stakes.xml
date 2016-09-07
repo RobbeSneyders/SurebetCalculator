@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+            android:textColorHint="@color/hintLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/leftStakeEditText"
+                style="@style/EditTextHeadlineLight"
+                android:theme="@style/EditTextCursorThemeLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Stake 1"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:digits="1234567890."
+                android:imeOptions="actionDone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+            android:textColorHint="@color/hintLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/middleStakeEditText"
+                style="@style/EditTextHeadlineLight"
+                android:theme="@style/EditTextCursorThemeLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Stake 2"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:digits="1234567890."
+                android:imeOptions="actionDone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+            android:textColorHint="@color/hintLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/rightStakeEditText"
+                style="@style/EditTextHeadlineLight"
+                android:theme="@style/EditTextCursorThemeLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Stake 3"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:digits="1234567890."
+                android:imeOptions="actionDone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:weightSum="3"
+        android:gravity="center_horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+            android:textColorHint="@color/hintLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/totalStakeEditText"
+                style="@style/EditTextHeadlineLight"
+                android:theme="@style/EditTextCursorThemeLight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:hint="Total"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:digits="1234567890."
+                android:imeOptions="actionDone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
