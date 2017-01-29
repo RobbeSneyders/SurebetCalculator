@@ -1,10 +1,33 @@
 <resources>
-    <string name="app_name">SurebetCalculator</string>
+    <string name="app_name">Surebet Calculator</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="info">Info</string>
+    <string name="rate">Rate</string>
+    <string name="source">Source code</string>
 
-    <string name="incomplete">INCOMPLETE</string>
+    <string name="double_bet">Double bet</string>
+    <string name="triple_bet">Triple bet</string>
+
+    <string name="odd1">Odd 1</string>
+    <string name="odd2">Odd 2</string>
+    <string name="odd3">Odd 3</string>
+
+    <string name="stake1">Stake 1</string>
+    <string name="stake2">Stake 2</string>
+    <string name="stake3">Stake 3</string>
+    <string name="total">Total</string>
+    <string name="round">n</string>
+    <string name="profits">Profits</string>
+
+    <string name="distr_prob">Distribute profit according to probability</string>
+    <string name="distr_equal">Distribute profit equally</string>
+
+    <string name="profit">Set profit for this bet</string>
+    <string name="no_profit">No profit for this bet</string>
+
+    <string name="round_stakes">Only round stakes for this bet</string>
+    <string name="no_round_stakes">No round stakes for this bet</string>
 </resources>

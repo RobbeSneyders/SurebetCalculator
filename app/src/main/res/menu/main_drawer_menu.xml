@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav_type"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_double"
+            android:title="@string/double_bet"/>
+        <item
+            android:id="@+id/nav_triple"
+            android:title="@string/triple_bet" />
+    </group>
+
+    <item
+        android:id="@+id/nav_info"
+        android:title="@string/info"/>
+
+    <item
+        android:id="@+id/nav_rate"
+        android:title="@string/rate"/>
+
+    <item
+        android:id="@+id/nav_source"
+        android:title="@string/source"/>
+
+</menu>

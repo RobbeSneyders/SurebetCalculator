@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootStakes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -12,76 +13,172 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginLeft="48dp"
-        android:layout_marginRight="48dp">
+        android:layout_marginRight="48dp"
+        android:baselineAligned="false">
 
-        <android.support.design.widget.TextInputLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
-            android:textColorHint="@color/hintLight">
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/leftStakeEditText"
-                style="@style/EditTextHeadlineLight"
-                android:theme="@style/EditTextCursorThemeLight"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="Stake 1"
-                android:singleLine="true"
-                android:inputType="phone"
-                android:digits="1234567890."
-                android:imeOptions="actionDone"/>
+                app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+                android:textColorHint="@color/hintLight">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/leftStakeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextHeadlineLight"
+                    android:digits="1234567890."
+                    android:hint="@string/stake1"/>
 
-        <android.support.design.widget.TextInputLayout
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxDistr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxRound1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"
+                    style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
-            android:textColorHint="@color/hintLight">
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/middleStakeEditText"
-                style="@style/EditTextHeadlineLight"
-                android:theme="@style/EditTextCursorThemeLight"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="Stake 2"
-                android:singleLine="true"
-                android:inputType="phone"
-                android:digits="1234567890."
-                android:imeOptions="actionDone"/>
+                app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+                android:textColorHint="@color/hintLight">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/middleStakeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextHeadlineLight"
+                    android:digits="1234567890."
+                    android:hint="@string/stake2"/>
 
-        <android.support.design.widget.TextInputLayout
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxDistr2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxRound2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"
+                    style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
-            android:textColorHint="@color/hintLight">
+            android:orientation="vertical">
 
-            <android.support.design.widget.TextInputEditText
-                android:id="@+id/rightStakeEditText"
-                style="@style/EditTextHeadlineLight"
-                android:theme="@style/EditTextCursorThemeLight"
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="Stake 3"
-                android:singleLine="true"
-                android:inputType="phone"
-                android:digits="1234567890."
-                android:imeOptions="actionDone"/>
+                app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+                android:textColorHint="@color/hintLight">
 
-        </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/rightStakeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/EditTextHeadlineLight"
+                    android:digits="1234567890."
+                    android:hint="@string/stake3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxDistr3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkBoxRound3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"
+                    style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,8 +186,47 @@
         android:orientation="horizontal"
         android:layout_marginLeft="48dp"
         android:layout_marginRight="48dp"
-        android:weightSum="3"
-        android:gravity="center_horizontal">
+        android:weightSum="6"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/toggleTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="E"
+            style="@style/EditTextHeadlineLight"
+            android:textColor="@color/colorPrimary"
+            android:focusable="false"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            app:hintTextAppearance="@style/EditTextHintAppearanceLight"
+            android:textColorHint="@color/hintLight">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/totalStakeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextHeadlineLight"
+                android:digits="1234567890."
+                android:hint="@string/total"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="0dp"
@@ -100,19 +236,68 @@
             android:textColorHint="@color/hintLight">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/totalStakeEditText"
-                style="@style/EditTextHeadlineLight"
-                android:theme="@style/EditTextCursorThemeLight"
+                android:id="@+id/roundEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:hint="Total"
-                android:singleLine="true"
-                android:inputType="phone"
-                android:digits="1234567890."
-                android:imeOptions="actionDone"/>
+                style="@style/EditTextHeadlineLight"
+                android:digits="1234567890"
+                android:hint="@string/round"/>
 
         </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/profits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/profits"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <TextView
+                android:id="@+id/leftProfitTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <TextView
+                android:id="@+id/middleProfitTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <TextView
+                android:id="@+id/rightProfitTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

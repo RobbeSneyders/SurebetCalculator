@@ -1,7 +1,7 @@
 package com.bargaista.surebetcalculator;
 
 /**
- * Created by Robbe on 31/08/2016.
+ * Base interface for view layer.
  */
 public interface BaseView<T> {
 
