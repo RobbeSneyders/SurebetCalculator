@@ -1,5 +1,5 @@
 # Surebet Calculator MVP
-Android app for calculating surebet stakes
+Android app for calculating surebet stakes.
 
 <a href="https://play.google.com/store/apps/details?id=com.bargaista.surebetcalculator"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="300" /></a>
 
@@ -53,4 +53,4 @@ The most requested features are:
 
 ## License
 
-Code released under the [GNU GPLv3](LICENSE.txt) license.
+Code released under the [GNU GPLv3](LICENSE) license.
